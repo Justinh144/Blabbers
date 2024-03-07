@@ -1,0 +1,22 @@
+{
+    "name": "blabber",
+    "version": "1.0.0",
+    "description": "The place to Blab",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "node index.js",
+        "start:dev": "concurrently \"mongod\" \"node index.js\"",
+        "dev": "nodemon index",
+        "seed": "node utils/seed"
+    },
+    "dependencies": {
+        "express": "^4.18.3",
+        "mongoose": "^8.2.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.9",
+        "concurrently": "^8.2.2"
+    }
+    
+}
